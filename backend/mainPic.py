@@ -9,7 +9,7 @@ rf = Roboflow(api_key="ULr8zI3pE4MU4eijDqFm")
 project = rf.workspace().project("license-plate-detection-l8xs4")
 model = project.version(1).model
 
-picture = "backend/JamesSahu.jpg"
+picture = "backend/SarahBaxi.jpg"
 image = cv2.imread(picture)
 # infer on a local image
 detections = model.predict(picture, confidence=40, overlap=30).json()
